@@ -14,9 +14,13 @@ export const Page = props => {
 			.querySelector('.Navbar')
 			.getBoundingClientRect().height;
 		page.style.paddingTop = `${navbarHeight}px`;
-  }, []);
-  
+	}, []);
+
 	useWindowResize(handleResize);
 
-	return <div className="Page">{props.children}</div>;
+	return (
+		<div className="Page animate__animated animate__fadeIn animate__faster">
+			{props.children}
+		</div>
+	);
 };

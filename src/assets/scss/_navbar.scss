@@ -9,7 +9,8 @@ $linkColor: white;
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	width: 100%;
+  width: 100%;
+  z-index: 10;
 	@include centeredFlex;
 
 	.nav {
@@ -28,7 +29,8 @@ $linkColor: white;
         transition: all 200ms;
 
 				&:hover,
-				&:active {
+        &:active,
+        &.active {
 					background-color: $linkHoveredBgColor;
         }
         i.fas {

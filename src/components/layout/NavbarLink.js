@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export const NavbarLink = ({ to, text, icon }) => (
 	<li className="NavbarLink">
-		<NavLink to={to}>
+		<NavLink exact to={to} activeClassName="active">
 			<i className={icon}></i> <span>{text}</span>
 		</NavLink>
 	</li>
