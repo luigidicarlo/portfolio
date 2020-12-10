@@ -9,3 +9,24 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
+.PageTitle {
+	font-size: clamp(2rem, 5vw, 3.5rem);
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 15%;
+		height: 4px;
+		background-color: $primaryColor;
+		bottom: -10px;
+		left: 0;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.PageTitle::after {
+		width: 10%;
+	}
+}

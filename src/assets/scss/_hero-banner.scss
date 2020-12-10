@@ -1,14 +1,14 @@
 .HeroBanner {
 	@include centeredFlex;
 	@include backgroundImageSetup;
-	background-image: url('../img/header.jpg');
+	background-image: url($heroBannerImage);
 	position: relative;
 
 	&::after {
 		content: '';
 		width: 100%;
 		height: 100%;
-		background-color: rgba(black, 0.6);
+		background-color: rgba($black, 0.6);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -26,7 +26,7 @@
 		hr {
 			border: none;
 			height: 3px;
-			background-color: green;
+			background-color: $primaryColor;
 		}
 		h4 {
 			margin: 0;

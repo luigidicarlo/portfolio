@@ -1,6 +1,8 @@
 $primaryColor: green;
-$secondaryColor: cornflowerblue;
-$white: white;
+$secondaryColor: gray;
+$white: #ffffff;
+$black: #000000;
+$heroBannerImage: '../img/header.jpg';
 
 *,
 *::after,
@@ -19,3 +21,4 @@ body {
 @import './utils';
 @import './navbar';
 @import './hero-banner';
+@import './skills';

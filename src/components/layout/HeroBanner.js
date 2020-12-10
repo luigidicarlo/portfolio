@@ -1,14 +1,6 @@
 import React from 'react';
+import { heroSkills } from '../../assets/data/skills';
 import { useWindowResize } from '../../hooks/useWindowResize';
-
-const skills = [
-	{ name: 'react', icon: 'fab fa-react' },
-	{ name: 'angular', icon: 'fab fa-angular' },
-	{ name: 'php', icon: 'fab fa-php' },
-	{ name: 'laravel', icon: 'fab fa-laravel' },
-	{ name: 'database', icon: 'fas fa-database' },
-	{ name: 'github', icon: 'fab fa-git' }
-];
 
 export const HeroBanner = () => {
 	const handleResize = React.useCallback(() => {
@@ -29,7 +21,7 @@ export const HeroBanner = () => {
 				<hr />
 				<h4>Web Developer</h4>
 				<div className="skills">
-					{skills.map(skill => (
+					{heroSkills.map(skill => (
 						<i key={skill.name} className={skill.icon}></i>
 					))}
 				</div>

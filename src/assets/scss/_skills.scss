@@ -1,0 +1,29 @@
+.SkillsScreen {
+	.skills-list {
+		padding: 0.5rem 0;
+
+		.Skill {
+			background-color: $white;
+			box-shadow: 0 0 10px rgba($black, 0.5);
+			padding: 1rem;
+			margin-bottom: 1rem;
+			border-radius: 5px;
+			border-bottom: 4px solid $primaryColor;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+			h2 {
+				@include centeredFlex;
+				flex-direction: row-reverse;
+				justify-content: space-between;
+				color: $primaryColor;
+				font-size: clamp(1.75rem, 6vw, 2rem);
+			}
+			p {
+				font-size: 1.25rem;
+				line-height: 1.75;
+			}
+		}
+	}
+}

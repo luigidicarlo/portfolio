@@ -1,7 +1,7 @@
-$navbarBgColor: gray;
-$navbarColor: white;
-$linkHoveredBgColor: darken(gray, 20);
-$linkColor: white;
+$navbarBgColor: $secondaryColor;
+$navbarColor: $white;
+$linkHoveredBgColor: darken($secondaryColor, 20);
+$linkColor: $white;
 
 .Navbar {
 	color: $navbarColor;
