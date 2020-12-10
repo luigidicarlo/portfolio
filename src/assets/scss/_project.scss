@@ -1,0 +1,73 @@
+.projects-list {
+	padding: 1rem 0;
+
+	.Project {
+		@include centeredFlex;
+		flex-direction: column;
+		padding: 1rem;
+		box-shadow: 0 0 10px rgba($black, 0.5);
+		margin-bottom: 1rem;
+		border-radius: 5px;
+		border-bottom: 4px solid $primaryColor;
+
+		strong {
+			color: $primaryColor;
+		}
+		p {
+			font-size: 1.25rem;
+
+			&.description,
+			&.responsibilities {
+				line-height: 1.75;
+			}
+			&.position {
+				color: lighten($black, 20);
+				font-size: 0.9rem;
+				font-weight: bold;
+				margin: 0;
+			}
+		}
+		hr {
+			border: none;
+			height: 4px;
+			width: 100%;
+			background-color: $primaryColor;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		.skills-used-title {
+			text-align: left;
+			align-self: flex-start;
+		}
+		.skills-used {
+			align-self: flex-start;
+			text-align: left;
+
+			p {
+				margin: 0.25rem 0;
+			}
+			i {
+				color: $primaryColor;
+				margin-right: 0.5rem;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.projects-list {
+		@include centeredFlex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		.Project {
+			justify-content: flex-start;
+			align-self: stretch;
+			width: 30%;
+			margin: 0 0.25rem 2rem;
+		}
+	}
+}

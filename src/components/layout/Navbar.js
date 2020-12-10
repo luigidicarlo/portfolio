@@ -1,10 +1,6 @@
 import React from 'react';
+import { links } from '../../assets/data/navbarLinks';
 import { NavbarLink } from './NavbarLink';
-
-const links = [
-	{ to: '/', text: 'Home', icon: 'fas fa-home' },
-	{ to: '/skills', text: 'Skills', icon: 'fas fa-hammer' }
-];
 
 export const Navbar = () => (
 	<nav className="Navbar">
