@@ -13,7 +13,8 @@
 		strong {
 			color: $primaryColor;
 		}
-		p {
+		p:not(.position) {
+			align-self: flex-start;
 			font-size: 1.25rem;
 
 			&.description,
@@ -58,16 +59,7 @@
 
 @media only screen and (min-width: 768px) {
 	.projects-list {
-		@include centeredFlex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: space-between;
-
-		.Project {
-			justify-content: flex-start;
-			align-self: stretch;
-			width: 30%;
-			margin: 0 0.25rem 2rem;
-		}
+		max-width: 75%;
+		margin: 0 auto;
 	}
 }
