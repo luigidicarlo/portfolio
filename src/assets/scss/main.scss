@@ -1,0 +1,17 @@
+$primaryColor: green;
+$secondaryColor: cornflowerblue;
+$white: white;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+@import './utils';
+@import './navbar';
