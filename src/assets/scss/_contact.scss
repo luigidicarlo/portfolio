@@ -14,7 +14,7 @@
 			@include centeredFlex;
 			justify-content: flex-start;
 			padding: 0.5rem;
-			font-size: 1.25rem;
+			font-size: clamp(1rem, 6vw, 1.25rem);
 			text-decoration: none;
 			color: $black;
 			transition: all 200ms;

@@ -10,6 +10,17 @@
 	background-repeat: no-repeat;
 }
 
+hr {
+	border: none;
+	height: 4px;
+	width: 100%;
+	background-color: $primaryColor;
+}
+
+.text-primary {
+	color: $primaryColor;
+}
+
 .PageTitle {
 	font-size: clamp(2rem, 5vw, 3.5rem);
 	position: relative;
